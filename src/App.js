@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -16,15 +16,10 @@ import Activities from './components/Activities';
 
 
 const App = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
 
   return (
     <BrowserRouter>
-      <Layout sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar}>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
