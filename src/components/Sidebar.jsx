@@ -1,9 +1,11 @@
 import React from 'react';
-import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookCopyIcon } from 'lucide-react';
+import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookCopyIcon, BookAIcon } from 'lucide-react';
+import profilephoto from '../assets/img/photo/profilephoto.png';
 
 // Sidebar Navigation Data
 const sidebar_data = [
     { name: 'Home', icon: Home, link: '#home' },
+    { name: 'About', icon: BookAIcon, link: '#about' },
     { name: 'Skills', icon: User, link: '#skills' },
     { name: 'Experience', icon: BriefcaseBusinessIcon, link: '#experience' },
     { name: 'Projects', icon: LucideWorkflow, link: '#projects' },
@@ -22,15 +24,18 @@ const sidebar_footer_data = [
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
     return (
-        <div className={`h-full flex flex-col px-4 bg-gray-800 text-white ${isOpen ? 'w-64' : 'w-20'} transition-all duration-300`}>
+        <div className={`h-full flex flex-col px-4 bg-gray-800 text-white ${isOpen ? 'w-64' : 'w-20'} transition-all duration-1000`}>
             {/* Sidebar Toggle Button */}
             <div className={`flex ${isOpen ? 'justify-end' : 'justify-center'} mt-4`}>
                 <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-700">
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
+            {isOpen && <img src={profilephoto} alt="Profile" className="w-32 h-32 rounded-full mx-auto mt-4" />}
+            <p className="text-center mt-4">Biswajit Ghosal</p>
+            <hr className="my-1 border-gray-700" />
             {/* Sidebar Navigation */}
-            <nav className="flex-grow mt-8">
+            <nav className="flex-grow mt-4">
                 {sidebar_data.map((item, index) => (
                     <a
                         key={index}
@@ -42,22 +47,25 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     </a>
                 ))}
             </nav>
+            {isOpen && <hr className="my-4 border-gray-700" />}
 
             {/* Sidebar Footer Links */}
-            <div className="flex justify-center gap-4 mb-4">
-                {sidebar_footer_data.map((item, index) => (
-                    <a
-                        key={index}
-                        href={item.link}
-                        title={item.name}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-300"
-                    >
-                        <item.icon size={20} />
-                    </a>
-                ))}
-            </div>
+            {isOpen &&
+                <div className="flex justify-center gap-4 mb-4">
+
+                    {sidebar_footer_data.map((item, index) => (
+                        <a
+                            key={index}
+                            href={item.link}
+                            title={item.name}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-gray-300"
+                        >
+                            <item.icon size={20} />
+                        </a>
+                    ))}
+                </div>}
         </div>
     );
 };
