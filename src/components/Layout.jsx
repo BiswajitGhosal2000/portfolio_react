@@ -1,26 +1,14 @@
-import React, { useState } from 'react';
-import Sidebar from './Sidebar';
+import React from 'react';
 
 const Layout = ({ children }) => {
-    const [sidebarOpen, setSidebarOpen] = useState(true);
-
-    const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
-    };
 
     return (
-        <div className="flex min-h-screen transition-all duration-300">
-            {/* Sidebar */}
-            <div
-                className={`bg-white shadow-md h-screen transition-all duration-300 ${sidebarOpen ? 'w-64' : 'w-32'}`}
-            >
-                <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-            </div>
-
-            {/* Main Content */}
-            <div className="flex-grow p-4 bg-gray-100">
-                {children}
-            </div>
+        <div
+            className="flex min-h-screen max-h-screen transition-all
+            border-4 duration-300 overflow-scroll scroll-behavior-smooth
+            bg-slate-400"
+        >
+            {children}
         </div>
     );
 };

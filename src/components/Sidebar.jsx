@@ -1,102 +1,60 @@
 import React from 'react';
 import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookCopyIcon } from 'lucide-react';
 
+// Sidebar Navigation Data
 const sidebar_data = [
-    {
-        name: 'Home',
-        icon: Home,
-        link: '/'
-    },
-    {
-        name: 'Skills',
-        icon: User,
-        link: '/skills'
-    },
-    {
-        name: 'Experience',
-        icon: BriefcaseBusinessIcon,
-        link: '/experience'
-    },
-    {
-        name: 'Projects',
-        icon: LucideWorkflow,
-        link: '/projects'
-    },
-    {
-        name: 'Education',
-        icon: BookOpenIcon,
-        link: '/education'
-    },
-    {
-        name: 'Blog',
-        icon: BookCopyIcon,
-        link: '/blog'
-    },
-    {
-        name: 'Activities',
-        icon: LucideWorkflow,
-        link: '/activities'
-    },
-    {
-        name: 'Contact',
-        icon: Mail,
-        link: '/contact'
-    }
+    { name: 'Home', icon: Home, link: '#home' },
+    { name: 'Skills', icon: User, link: '#skills' },
+    { name: 'Experience', icon: BriefcaseBusinessIcon, link: '#experience' },
+    { name: 'Projects', icon: LucideWorkflow, link: '#projects' },
+    { name: 'Education', icon: BookOpenIcon, link: '#education' },
+    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
+    { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
+    { name: 'Contact', icon: Mail, link: '#contact' }
 ];
 
+// Sidebar Footer Data
 const sidebar_footer_data = [
-    {
-        name: 'Mail',
-        icon: Mail,
-        link: 'mailto:ghosalbiswajit11@gmail.com'
-    },
-    {
-        name: 'GitHub',
-        icon: GitBranchIcon,
-        link: 'https://github.com/BiswajitGhosal2000'
-    },
-    {
-        name: 'LinkedIn',
-        icon: Linkedin,
-        link: 'https://www.linkedin.com/in/biswajitghosal/'
-    }
+    { name: 'Mail', icon: Mail, link: 'mailto:ghosalbiswajit11@gmail.com' },
+    { name: 'GitHub', icon: GitBranchIcon, link: 'https://github.com/BiswajitGhosal2000' },
+    { name: 'LinkedIn', icon: Linkedin, link: 'https://www.linkedin.com/in/biswajitghosal/' }
 ];
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
     return (
-        <div className={`h-full flex flex-col bg-gray-800 text-white ${isOpen ? 'w-64' : 'w-32'} transition-all duration-300`}>
+        <div className={`h-full flex flex-col px-4 bg-gray-800 text-white ${isOpen ? 'w-64' : 'w-20'} transition-all duration-300`}>
             {/* Sidebar Toggle Button */}
-            <button
-                onClick={toggleSidebar}
-                className="px-2 mt-4 rounded-md"
-            >
-                {isOpen ? <X size={32} /> : <Menu size={32} />}
-            </button>
-
-            {/* Sidebar Links */}
-            <nav className="flex-grow mt-4 mx-auto my-2">
+            <div className={`flex ${isOpen ? 'justify-end' : 'justify-center'} mt-4`}>
+                <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-700">
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+            </div>
+            {/* Sidebar Navigation */}
+            <nav className="flex-grow mt-8">
                 {sidebar_data.map((item, index) => (
                     <a
                         key={index}
                         href={item.link}
-                        className="flex items-center p-4 hover:bg-gray-700 rounded-md "
+                        className={`flex items-center ${isOpen ? 'justify-start' : 'justify-center'} gap-4 px-4 py-3 hover:bg-gray-700 rounded-md transition-all`}
                     >
-                        <item.icon size={32} />
-                        {isOpen && <span>&nbsp; {item.name}</span>}
+                        <item.icon size={24} />
+                        {isOpen && <span>{item.name}</span>}
                     </a>
                 ))}
             </nav>
 
             {/* Sidebar Footer Links */}
-            <div className="flex flex-row mb-4 px-4 space-y-2 justify-around">
+            <div className="flex justify-center gap-4 mb-4">
                 {sidebar_footer_data.map((item, index) => (
                     <a
                         key={index}
                         href={item.link}
                         title={item.name}
-                        className="flex items-center hover:text-gray-300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-300"
                     >
-                        <item.icon size={24} className="mr-2" title={item.name} />
+                        <item.icon size={20} />
                     </a>
                 ))}
             </div>
