@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HeadingTitle from './tools/HeadingTitle';
 
 function Activities() {
     // Dummy data for demonstration purposes
@@ -52,8 +53,8 @@ function Activities() {
     };
 
     return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-4xl font-extrabold text-center mb-8 text-gray-900">My Photography</h1>
+        <div className="container">
+            <HeadingTitle title={"Activities"} />
             <p className="text-center text-lg text-gray-600 mb-12">
                 Explore some of my favorite photographs that capture the beauty of nature, cityscapes, and more.
             </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import HeadingTitle from './tools/HeadingTitle';
 
 const educationalData = [
     {
@@ -26,10 +27,8 @@ const educationalData = [
 
 function Education() {
     return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-5xl font-extrabold text-center mb-10 pb-5 border-b-4 border-indigo-500 text-gray-800 ">
-                Educational Details
-            </h1>
+        <div className="container">
+            <HeadingTitle title={"Education"} />
             <div className="relative">
                 <div className="border-l-4 border-blue-500 absolute h-full top-0 left-3/4 transform -translate-x-1/2"></div>
                 <div className="border-l-4 border-blue-500 absolute h-full top-0 left-1/4 transform -translate-x-1/2"></div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import HeadingTitle from './tools/HeadingTitle';
 
 const projects = [
     {
@@ -27,8 +28,8 @@ const projects = [
 
 function Projects() {
     return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-4xl font-bold text-center mb-8">My Projects</h1>
+        <div className="container">
+            <HeadingTitle title={"Projects"} />
             <p className="text-center text-lg mb-12">
                 Explore the live demos and details of my latest projects. Click on each card to learn more.
             </p>

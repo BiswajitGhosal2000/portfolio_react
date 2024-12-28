@@ -6,6 +6,7 @@ function BlogItem() {
 
     // Dummy data for demonstration; replace with data fetching logic
     const post = {
+        id: id,
         title: "Understanding React Hooks",
         content: `
             React Hooks are functions that let you use state and other React features without writing a class. 

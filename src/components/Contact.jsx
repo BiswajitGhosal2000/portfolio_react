@@ -1,8 +1,10 @@
 import React from 'react';
+import HeadingTitle from './tools/HeadingTitle';
 
 function Contact() {
     return (
-        <div className="container mx-auto p-2">
+        <div className="container">
+            <HeadingTitle title={"Contact"} />
             <div className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
                 <form className="space-y-6">
                     <h1 className="text-4xl font-extrabold text-center mb-2 text-gray-900">Contact Me</h1>
