@@ -11,8 +11,8 @@ import ASDCertificate from '../assets/files/internship/ASD_Certificate.png';
 import ASD from '../assets/img/experience/ASD.png';
 import PersistentLogo from '../assets/img/experience/persistent-systems-logo.png';
 import ExavaluLogo from '../assets/img/experience/Exavalu Logo.png';
-import HeadingTitle from './tools/HeadingTitle';
-import Timeline from './tools/Timeline';
+import HeadingTitle from '../components/HeadingTitle';
+import Timeline from '../components/Timeline';
 
 
 const experiences = [

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HeadingTitle from './tools/HeadingTitle';
+import HeadingTitle from '../components/HeadingTitle';
 
 function Activities() {
     // Dummy data for demonstration purposes

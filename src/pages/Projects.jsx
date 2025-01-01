@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingTitle from './tools/HeadingTitle';
+import HeadingTitle from '../components/HeadingTitle';
 
 const projects = [
     {

@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import Layout from './components/Layout';
-import Sidebar from './components/Sidebar';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Blog from './components/blogs/Blog';
-import BlogItem from './components/blogs/BlogItem';
-import Activities from './components/Activities';
+import Layout from './pages/Layout';
+import Sidebar from './pages/Sidebar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Skills from './pages/Skills';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
+import Blog from './pages/blogs/Blog';
+import BlogItem from './pages/blogs/BlogItem';
+import Activities from './pages/Activities';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
