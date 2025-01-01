@@ -32,22 +32,23 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </button>
             </div>
             {isOpen && <img src={profilephoto} alt="Profile" className="w-32 h-32 rounded-full mx-auto mt-4" />}
-            <p className="text-center mt-4">Biswajit Ghosal</p>
+            {!isOpen && <p className="text-center mt-4">Biswajit Ghosal</p>}
             <hr className="my-1 border-gray-700" />
             {/* Sidebar Navigation */}
-            <nav className="flex-grow mt-4">
+            <nav className="flex-grow mt-2">
                 {sidebar_data.map((item, index) => (
                     <a
                         key={index}
                         href={item.link}
-                        className={`flex items-center ${isOpen ? 'justify-start' : 'justify-center'} gap-4 px-4 py-3 hover:bg-gray-700 rounded-md transition-all`}
+                        {...(isOpen ? {} : { title: item.name })}
+                        className={`flex items-center ${isOpen ? 'justify-start' : 'justify-center'} gap-4 p-3 hover:bg-gray-700 rounded-md transition-all`}
                     >
                         <item.icon size={24} />
                         {isOpen && <span>{item.name}</span>}
                     </a>
                 ))}
             </nav>
-            {isOpen && <hr className="my-4 border-gray-700" />}
+            {isOpen && <hr className="my-2 border-gray-700" />}
 
             {/* Sidebar Footer Links */}
             {isOpen &&

@@ -30,9 +30,6 @@ function Projects() {
     return (
         <div className="container">
             <HeadingTitle title={"Projects"} />
-            <p className="text-center text-lg mb-12">
-                Explore the live demos and details of my latest projects. Click on each card to learn more.
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                     <div key={index} className="relative bg-white shadow-lg rounded-lg overflow-hidden group">

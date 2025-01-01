@@ -2,7 +2,7 @@ import React from 'react';
 
 function HeadingTitle({ title }) {
     return (
-        <div className="relative w-full mb-8 p-2">
+        <div className="relative w-full mb-4 p-2">
             <h2 className="text-[#312d2d] text-[35px] font-bold tracking-[3px] m-0">
                 {title}
             </h2>
