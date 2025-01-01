@@ -52,17 +52,17 @@ const App = () => {
           </Layout>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="py-4">
-          <Layout>
-            <Projects />
-          </Layout>
-        </section>
-
         {/* Experience Section */}
         <section id="experience" className="py-4">
           <Layout>
             <Experience />
+          </Layout>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="py-4">
+          <Layout>
+            <Projects />
           </Layout>
         </section>
 
