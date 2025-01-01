@@ -55,10 +55,7 @@ function Activities() {
     return (
         <div className="container">
             <HeadingTitle title={"Activities"} />
-            <p className="text-center text-lg text-gray-600 mb-12">
-                Explore some of my favorite photographs that capture the beauty of nature, cityscapes, and more.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
                 {photos.map((photo) => (
                     <div
                         key={photo.id}

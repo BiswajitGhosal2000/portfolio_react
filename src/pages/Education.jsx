@@ -3,21 +3,21 @@ import HeadingTitle from '../components/HeadingTitle';
 
 const educationalData = [
     {
-        title: 'B.Tech in information Technology',
+        title: 'B.Tech in Information Technology',
         institution: 'Meghnad Saha Institute of Technology',
         university: 'MAKAUT',
         graduationDate: 'July 2023',
         result: '9.29 CGPA'
     },
     {
-        title: 'Higher Secondary(12th)',
+        title: 'Higher Secondary (12th)',
         institution: 'Bankura Municipal High School',
         university: 'WBCHSE',
         graduationDate: 'May 2018',
         result: '86%'
     },
     {
-        title: 'Madhyamik(10th)',
+        title: 'Madhyamik (10th)',
         institution: 'Ramharipur Ramkrishna Mission High School',
         university: 'WBBSE',
         graduationDate: 'March 2016',
@@ -29,24 +29,24 @@ function Education() {
     return (
         <div className="container">
             <HeadingTitle title={"Education"} />
-            <div className="relative">
-                <div className="border-l-4 border-blue-500 absolute h-full top-0 left-3/4 transform -translate-x-1/2"></div>
-                <div className="border-l-4 border-blue-500 absolute h-full top-0 left-1/4 transform -translate-x-1/2"></div>
-                <div className="space-y-8">
-                    {educationalData.map((data, index) => (
-                        <div key={index} className="relative flex items-center">
-                            <div className="w-6 h-6 bg-blue-500 rounded-full absolute left-1/4 transform -translate-x-1/2 border-4 border-white"></div>
-                            <div className="w-6 h-6 bg-blue-500 rounded-full absolute left-3/4 transform -translate-x-1/2 border-4 border-white"></div>
-                            <div className="bg-red-100 shadow-lg rounded-lg p-6 w-full text-center">
-                                <h2 className="text-2xl font-semibold mb-2">{data.title}</h2>
-                                <h3 className="text-xl font-medium text-gray-600 mb-2">{data.institution}</h3>
-                                <h4 className="text-xl font-medium text-gray-600 mb-2">University/Board: {data.university}</h4>
-                                <p className="text-gray-700 mb-4">Graduated On: {data.graduationDate}</p>
-                                <p className="text-gray-600">Marks: {data.result}</p>
-                            </div>
+            <div className="space-y-6">
+                {educationalData.map((data, index) => (
+                    <div
+                        key={index}
+                        className="relative flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200"
+                    >
+                        <div className="w-full md:w-1/3 bg-blue-500 text-white text-center py-6 px-4">
+                            <h2 className="text-xl font-semibold">{data.title}</h2>
+                            <p className="text-sm mt-2">Graduated On</p>
+                            <p className="text-lg font-medium">{data.graduationDate}</p>
                         </div>
-                    ))}
-                </div>
+                        <div className="w-full md:w-2/3 p-6 text-gray-700">
+                            <h3 className="text-lg font-semibold mb-2">{data.institution}</h3>
+                            <p className="text-sm mb-1">University/Board: <span className="font-medium">{data.university}</span></p>
+                            <p className="text-sm">Marks: <span className="font-medium">{data.result}</span></p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

@@ -5,9 +5,8 @@ function Contact() {
     return (
         <div className="container">
             <HeadingTitle title={"Contact"} />
-            <div className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+            <div className="max-w-2xl mx-auto bg-gray-50 p-4 rounded-xl shadow-lg border border-gray-200">
                 <form className="space-y-6">
-                    <h1 className="text-4xl font-extrabold text-center mb-2 text-gray-900">Contact Me</h1>
                     <div>
                         <label htmlFor="name" className="block text-lg font-semibold text-gray-800">Name</label>
                         <input
@@ -51,7 +50,7 @@ function Contact() {
                     <div className="text-center">
                         <button
                             type="submit"
-                            className="inline-flex items-center justify-center py-3 px-6 border border-transparent text-lg font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200"
+                            className="inline-flex items-center justify-center py-3 px-6 border border-transparent font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200"
                         >
                             Send Message
                         </button>

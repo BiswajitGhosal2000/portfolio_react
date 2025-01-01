@@ -10,9 +10,9 @@ const sidebar_data = [
     { name: 'Experience', icon: BriefcaseBusinessIcon, link: '#experience' },
     { name: 'Projects', icon: LucideWorkflow, link: '#projects' },
     { name: 'Education', icon: BookOpenIcon, link: '#education' },
-    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
     { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
-    { name: 'Contact', icon: Mail, link: '#contact' }
+    { name: 'Contact', icon: Mail, link: '#contact' },
+    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
 ];
 
 // Sidebar Footer Data

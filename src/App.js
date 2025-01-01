@@ -11,7 +11,6 @@ import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Blog from './pages/blogs/Blog';
-import BlogItem from './pages/blogs/BlogItem';
 import Activities from './pages/Activities';
 
 const App = () => {
@@ -89,8 +88,9 @@ const App = () => {
 
         {/* Blog Section */}
         <section id="blog" className="py-4">
-          <Blog />
-          <BlogItem />
+          <Layout>
+            <Blog />
+          </Layout>
         </section>
       </div>
     </div>
