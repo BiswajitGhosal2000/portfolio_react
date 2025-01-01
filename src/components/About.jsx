@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../assets/img/photo/profilephoto.png';
+import ProfilePhoto from '../assets/img/photo/photo.png';
 import HeadingTitle from './tools/HeadingTitle';
 
 const about_data = {
