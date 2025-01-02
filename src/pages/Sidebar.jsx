@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         {...(isOpen ? {} : { title: item.name })}
                         className={`flex items-center ${isOpen ? 'justify-start' : 'justify-center'} gap-4 p-3 hover:bg-gray-700 rounded-md transition-all`}
                     >
-                        <item.icon size={24} />
+                        <item.icon size={28} />
                         {isOpen && <span>{item.name}</span>}
                     </a>
                 ))}
@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
             {/* Sidebar Footer Links */}
             {isOpen &&
-                <div className="flex justify-center gap-4 mb-4">
+                <div className="flex justify-around gap-4 mb-4">
 
                     {sidebar_footer_data.map((item, index) => (
                         <a
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                             rel="noopener noreferrer"
                             className="hover:text-gray-300"
                         >
-                            <item.icon size={20} />
+                            <item.icon size={28} />
                         </a>
                     ))}
                 </div>}

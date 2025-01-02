@@ -30,7 +30,7 @@ const App = () => {
       </div>
 
       {/* Main Content */}
-      <div className={`flex-grow transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-20'} px-4 overflow-y-auto`}>
+      <div className={`flex-grow bg-inherit transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-20'} px-4 overflow-y-auto`}>
         <div className="flex justify-end py-4 bg-blue-400 h-12" />
         {/* Home Section */}
         <section id="home" className='py-4'>
