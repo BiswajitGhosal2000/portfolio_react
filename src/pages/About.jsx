@@ -14,19 +14,26 @@ function About() {
     return (
         <div className="container">
             <HeadingTitle title={"About"} />
-            <div className="">
-
+            <div className="m-2">
                 <div className="w-full flex">
-                    <img src={ProfilePhoto} alt="Profile" className="w-1/2 " />
-                    <div className=" px-2 w-1/2">
-                        <p className="text-pretty my-6">
+                    <img src={ProfilePhoto} alt="Profile" className="w-1/3 m-2 rounded-lg h-fit " />
+                    <div className="w-1/2 bg-white m-2 p-2 rounded-lg">
+                        {/* Description */}
+                        <p className="text-gray-700 font-semibold mb-6 leading-relaxed">
                             {about_data.description}
                         </p>
-                        <h1>Personal Details:</h1>
-                        <p>Gender: {about_data.gender}</p>
-                        <p>Nationality: {about_data.nationality}</p>
-                        <p>Languages: {about_data.Languages.join(', ')}</p>
-                        <p>Hobbies: {about_data.hobbies.join(', ')}</p>
+
+                        {/* Divider */}
+                        <div className="border-t border-gray-200 my-4"></div>
+
+                        {/* Personal Details */}
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">Personal Details</h2>
+                        <div className="space-y-2">
+                            <p className="text-gray-600"><span className="font-medium text-gray-800">&nbsp; Gender:</span> {about_data.gender}</p>
+                            <p className="text-gray-600"><span className="font-medium text-gray-800">&nbsp; Nationality:</span> {about_data.nationality}</p>
+                            <p className="text-gray-600"><span className="font-medium text-gray-800">&nbsp; Languages:</span> {about_data.Languages.join(', ')}</p>
+                            <p className="text-gray-600"><span className="font-medium text-gray-800">&nbsp; Hobbies:</span> {about_data.hobbies.join(', ')}</p>
+                        </div>
                     </div>
                 </div>
             </div>

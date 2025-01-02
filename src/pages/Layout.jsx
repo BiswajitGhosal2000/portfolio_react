@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
     return (
         <div
             className="flex  max-h-screen transition-all
-            border-4 duration-300 overflow-y-scroll bg-transparent shadow-md"
+            border-2 rounded-lg duration-300 overflow-y-auto bg-transparent shadow-md"
         >
             {children}
         </div>

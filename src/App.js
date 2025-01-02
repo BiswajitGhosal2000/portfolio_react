@@ -10,8 +10,8 @@ import Contact from './pages/Contact';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
-import Blog from './pages/blogs/Blog';
-import Activities from './pages/Activities';
+// import Blog from './pages/blogs/Blog';
+// import Activities from './pages/Activities';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -72,12 +72,12 @@ const App = () => {
           </Layout>
         </section>
 
-        {/* Activities Section */}
+        {/* Activities Section
         <section id="activities" className="py-4">
           <Layout>
             <Activities />
           </Layout>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <section id="contact" className="py-4">
@@ -86,12 +86,12 @@ const App = () => {
           </Layout>
         </section>
 
-        {/* Blog Section */}
-        <section id="blog" className="py-4">
+        {/* Blog Section 
+         <section id="blog" className="py-4">
           <Layout>
             <Blog />
           </Layout>
-        </section>
+        </section> */}
       </div>
     </div>
   );

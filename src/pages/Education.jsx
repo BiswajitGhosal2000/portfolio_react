@@ -29,7 +29,7 @@ function Education() {
     return (
         <div className="container">
             <HeadingTitle title={"Education"} />
-            <div className="space-y-6">
+            <div className="space-y-6 p-2">
                 {educationalData.map((data, index) => (
                     <div
                         key={index}

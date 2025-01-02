@@ -96,26 +96,26 @@ function Skills() {
                     <Card key={index} src={skill.img} cardTitle={skill.name} cardDescription={skill.description} progressValue={skill.progressValue} />
                 ))}
             </div>
-            <div className="mt-2">
+            <div className="m-2">
                 <h2>Programming Language:</h2>
                 {Programming_Language.map((language, index) => (
                     <i key={index} className={language.icon}>{language.name}&nbsp;&nbsp;&nbsp;</i>
                 ))
                 }
             </div>
-            <div className="mt-2">
+            <div className="m-2">
                 <h2>Tools:</h2>
                 {tools.map((tool, index) => (
                     <i key={index} className={tool.icon}> {tool.name}&nbsp;&nbsp;&nbsp;</i>
                 ))}
             </div>
-            <div className="mt-2">
+            <div className="m-2">
                 <h2>Database:</h2>
                 {database_skills.map((database, index) => (
                     <i key={index} className={database.icon}> {database.name}&nbsp;&nbsp;&nbsp;</i>
                 ))}
             </div>
-            <div className="mt-2">
+            <div className="m-2">
                 <h2>Web Technologies:</h2>
                 {webTechnologiesSkills.map((skill, index) => (
                     <i key={index} className={skill.icon}> {skill.name}&nbsp;&nbsp;&nbsp;</i>

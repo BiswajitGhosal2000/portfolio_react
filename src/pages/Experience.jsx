@@ -59,9 +59,11 @@ const Experience = () => {
     return (
         <div className="container">
             <HeadingTitle title={"Experience"} />
-            {experiences.map((experience, index) => (
-                <Timeline key={index} organizationLogo={experience.organizationLogo} title={experience.title} description={experience.description} date={experience.date} skills={experience.skills} certificate={experience.certificate} />
-            ))}
+            <div className="p-2">
+                {experiences.map((experience, index) => (
+                    <Timeline key={index} organizationLogo={experience.organizationLogo} title={experience.title} description={experience.description} date={experience.date} skills={experience.skills} certificate={experience.certificate} />
+                ))}
+            </div>
         </div >
     );
 };

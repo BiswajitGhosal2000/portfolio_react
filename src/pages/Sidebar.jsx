@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookCopyIcon, BookAIcon } from 'lucide-react';
+import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookAIcon } from 'lucide-react';
 import profilephoto from '../assets/img/photo/profilephoto.png';
 
 // Sidebar Navigation Data
@@ -10,9 +10,9 @@ const sidebar_data = [
     { name: 'Experience', icon: BriefcaseBusinessIcon, link: '#experience' },
     { name: 'Projects', icon: LucideWorkflow, link: '#projects' },
     { name: 'Education', icon: BookOpenIcon, link: '#education' },
-    { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
+    // { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
     { name: 'Contact', icon: Mail, link: '#contact' },
-    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
+    // { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
 ];
 
 // Sidebar Footer Data
