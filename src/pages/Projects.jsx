@@ -22,6 +22,7 @@ import housepriceprediction2 from "../assets/img/project/House Price Prediction/
 const projects = [
     {
         title: "MERN Stack Web Development",
+        icon: "fa-solid fa-computer",
         name: "User Management",
         date: "Aug 2023",
         description:
@@ -36,6 +37,7 @@ const projects = [
     },
     {
         title: "Full Stack Web Development",
+        icon: "fa-solid fa-computer",
         name: "Pharmacy Management",
         description:
             "A web app to digitize processes for pharmacy stores, providing solutions to improve billing, employee, and inventory management.",
@@ -48,6 +50,7 @@ const projects = [
     },
     {
         title: "Front End Web Development",
+        icon: "fa-solid fa-computer",
         name: "Weather App",
         description:
             "A website to check the weather of different cities. By default, it shows the weather of Kolkata, and users can search for other cities.",
@@ -63,6 +66,7 @@ const projects = [
     },
     {
         title: "Machine Learning",
+        icon: "fa-solid fa-brain",
         name: "House Price Prediction",
         description:
             "A web app to check the price of houses in Bengaluru. It takes Square Ft, BHK, Bathroom, and location as input and gives the price as output.",
@@ -90,9 +94,10 @@ function Projects() {
                     >
                         <div className="p-6">
                             <h5 className="text-xl font-bold mb-4 flex items-center">
-                                <i className="fa-solid fa-computer mr-2 text-blue-500"></i>
+                                <i className={`${project.icon} text-blue-400 mx-2`}></i>
                                 {project.title}
                             </h5>
+                            <hr className="my-2 border-2" />
                             <h6 className="text-lg font-semibold">
                                 <strong>{project.name}</strong>: {project.description}
                             </h6>
