@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
+import Certifications from './pages/Certifications';
 import Education from './pages/Education';
 // import Blog from './pages/blogs/Blog';
 // import Activities from './pages/Activities';
@@ -62,6 +63,13 @@ const App = () => {
         <section id="projects" className="py-4">
           <Layout>
             <Projects />
+          </Layout>
+        </section>
+
+        {/* Certifications Section */}
+        <section id="certifications" className="py-4">
+          <Layout>
+            <Certifications />
           </Layout>
         </section>
 

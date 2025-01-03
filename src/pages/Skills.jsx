@@ -94,10 +94,6 @@ const webTechnologiesSkills = [
         icon: 'fab fa-js-square'
     },
     {
-        name: 'Python',
-        icon: 'fab fa-python'
-    },
-    {
         name: 'Flask',
         icon: 'fab fa-flask'
     },
