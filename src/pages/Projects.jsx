@@ -92,19 +92,12 @@ function Projects() {
                         className="bg-white rounded-lg shadow-lg mb-8 overflow-hidden"
                         key={index}
                     >
-                        <div className="p-6">
+                        <div className="p-2">
                             <h5 className="text-xl font-bold mb-4 flex items-center">
                                 <i className={`${project.icon} text-blue-400 mx-2`}></i>
                                 {project.title}
                             </h5>
-                            <hr className="my-2 border-2" />
-                            <h6 className="text-lg font-semibold">
-                                <strong>{project.name}</strong>: {project.description}
-                            </h6>
-                            <p className="text-gray-600 mt-2">
-                                <span className="font-bold">Tools/Technology:</span>{" "}
-                                {project.tools}
-                            </p>
+                            <hr className=" border-2" />
                         </div>
                         <div className="flex flex-wrap">
                             {/* Carousel */}
@@ -115,17 +108,22 @@ function Projects() {
                                 <div className="relative">
                                     {project.images.map((image, i) => (
                                         <div className={`${i === 0 ? "block" : "hidden"} duration-500`} key={i} >
-                                            <img src={image} alt={`Slide ${i + 1}`} className="rounded-lg max-h-96" />
+                                            <img src={image} alt={`Slide ${i + 1}`} className="rounded-lg max-h-96 mx-auto" />
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             {/* Description & Links */}
                             <div className="w-full md:w-1/2 p-4">
-                                <h6 className="font-bold mb-2">Description:</h6>
-                                <ul className="list-disc ml-6">
-                                    <li>{project.description}</li>
-                                </ul>
+                                <h6 className="text-3xl font-bold">
+                                    <strong>{project.name}</strong>
+                                </h6>
+                                <h6 className="font-bold mb-2">{project.description}</h6>
+                                <p className="text-gray-600 mt-2">
+                                    <span className="font-bold">Tools/Technology:</span>{" "}
+                                    {project.tools}
+                                </p>
+                                <hr className="my-2 border-2" />
                                 <div className="mt-4 flex space-x-4">
                                     {project.websiteLink && (
                                         <a

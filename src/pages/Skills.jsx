@@ -16,13 +16,13 @@ const development_skills = [
         name: "Full Stack Development",
         img: full_stack,
         description: 'Full Stack Development Skill',
-        progressValue: 80
+        progressValue: 90
     },
     {
         name: 'Machine Learning',
         img: machine_learning,
         description: 'Machine Learning Skill',
-        progressValue: 70
+        progressValue: 50
     }
 ];
 const Programming_Language = [
@@ -30,6 +30,10 @@ const Programming_Language = [
         name: 'Python',
         icon: 'fab fa-python'
     },
+    {
+        name: 'Java',
+        icon: 'fab fa-java'
+    }
 ];
 const tools = [
     {
@@ -66,24 +70,44 @@ const database_skills = [
 const webTechnologiesSkills = [
 
     {
-        name: 'HTML, CSS, Tailwind CSS',
+        name: 'HTML',
         icon: 'fab fa-html5'
     },
     {
-        name: 'JavaScript (ES6+), TypeScript',
-        icon: 'fab fa-js-square'
+        name: 'CSS',
+        icon: 'fab fa-css3-alt'
+    },
+    {
+        name: 'Tailwind',
+        icon: 'fab fa-tailwind'
+    },
+    {
+        name: 'Bootstrap',
+        icon: 'fab fa-bootstrap'
     },
     {
         name: 'React.js',
         icon: 'fab fa-react'
     },
     {
-        name: 'Python, Flask',
+        name: 'JavaScript (ES6+)',
+        icon: 'fab fa-js-square'
+    },
+    {
+        name: 'Python',
         icon: 'fab fa-python'
     },
     {
-        name: 'Node.js, Express',
+        name: 'Flask',
+        icon: 'fab fa-flask'
+    },
+    {
+        name: 'Node.js',
         icon: 'fab fa-node-js'
+    },
+    {
+        name: 'Express.js',
+        icon: 'fas fa-server'
     },
 ];
 
@@ -91,37 +115,54 @@ function Skills() {
     return (
         <div className="container">
             <HeadingTitle title={"Skills"} />
-            <div className="flex flex-wrap justify-around">
+            <div className="flex flex-wrap justify-around ">
                 {development_skills.map((skill, index) => (
                     <Card key={index} src={skill.img} cardTitle={skill.name} cardDescription={skill.description} progressValue={skill.progressValue} />
                 ))}
             </div>
-            <div className="m-2">
-                <h2>Programming Language:</h2>
-                {Programming_Language.map((language, index) => (
-                    <i key={index} className={language.icon}>{language.name}&nbsp;&nbsp;&nbsp;</i>
-                ))
-                }
-            </div>
-            <div className="m-2">
-                <h2>Tools:</h2>
-                {tools.map((tool, index) => (
-                    <i key={index} className={tool.icon}> {tool.name}&nbsp;&nbsp;&nbsp;</i>
-                ))}
-            </div>
-            <div className="m-2">
-                <h2>Database:</h2>
-                {database_skills.map((database, index) => (
-                    <i key={index} className={database.icon}> {database.name}&nbsp;&nbsp;&nbsp;</i>
-                ))}
-            </div>
-            <div className="m-2">
-                <h2>Web Technologies:</h2>
-                {webTechnologiesSkills.map((skill, index) => (
-                    <i key={index} className={skill.icon}> {skill.name}&nbsp;&nbsp;&nbsp;</i>
-                ))}
-            </div>
-        </div>
+            <div className=''>
+                <div className="m-2 ">
+                    <h2>Programming Language:</h2>
+                    <div className="flex flex-wrap space-x-2">
+                        {Programming_Language.map((language, index) => (
+                            <span key={index} className="px-2 py-1 bg-blue-700 text-white text-sm rounded-md shadow-sm">
+                                <i key={index} className={language.icon}></i>&nbsp;{language.name}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                <div className="m-2">
+                    <h2>Tools:</h2>
+                    <div className="flex flex-wrap space-x-2">
+                        {tools.map((tool, index) => (
+                            <span key={index} className="px-2 py-1 bg-blue-700 text-white text-sm rounded-md shadow-sm">
+                                <i key={index} className={tool.icon}></i>&nbsp;{tool.name}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                <div className="m-2">
+                    <h2>Database:</h2>
+                    <div className="flex flex-wrap space-x-2">
+                        {database_skills.map((skill, index) => (
+                            <span key={index} className="px-2 py-1 bg-blue-700 text-white text-sm rounded-md shadow-sm">
+                                <i key={index} className={skill.icon}></i>&nbsp;{skill.name}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                <div className="m-2">
+                    <h2>Web Technologies:</h2>
+                    <div className="flex flex-wrap space-x-2">
+                        {webTechnologiesSkills.map((skill, index) => (
+                            <span key={index} className="px-2 py-1 bg-blue-700 text-white text-sm rounded-md shadow-sm">
+                                <i key={index} className={skill.icon}></i>&nbsp;{skill.name}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            </div >
+        </div >
     );
 }
 

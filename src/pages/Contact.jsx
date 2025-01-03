@@ -50,7 +50,7 @@ function Contact() {
 
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container">
             <HeadingTitle title="Contact" />
             <div className="max-w-2xl mx-auto my-6 p-6 bg-white rounded-xl shadow-lg border border-gray-200">
                 <form onSubmit={handleSubmit} className="space-y-6">
