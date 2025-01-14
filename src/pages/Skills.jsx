@@ -50,7 +50,7 @@ const tools = [
     },
     {
         name: 'Postman',
-        icon: 'fab fa-avianex'
+        icon: 'fas fa-tools'
     },
     {
         name: "aws",
@@ -64,7 +64,7 @@ const database_skills = [
     },
     {
         name: 'MySQL',
-        icon: 'fas fa-database'
+        icon: 'fas fa-leaf'
     },
 ];
 const webTechnologiesSkills = [
@@ -95,7 +95,7 @@ const webTechnologiesSkills = [
     },
     {
         name: 'Flask',
-        icon: 'fab fa-flask'
+        icon: 'fas fa-flask'
     },
     {
         name: 'Node.js',
