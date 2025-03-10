@@ -1,44 +1,50 @@
 import React, { useState } from 'react';
 import HeadingTitle from '../components/HeadingTitle';
+import activityData from '../assets/img/activity/photography/1.jpeg';
+import activityData2 from '../assets/img/activity/photography/2.jpg';
+import activityData3 from '../assets/img/activity/photography/3.jpeg';
+import activityData4 from '../assets/img/activity/photography/4.jpg';
+import activityData5 from '../assets/img/activity/photography/5.jpg';
+import activityData6 from '../assets/img/activity/photography/6.jpg';
 
 function Activities() {
     // Dummy data for demonstration purposes
     const photos = [
         {
             id: 1,
-            title: "Sunset Over the Mountains",
-            description: "A beautiful sunset captured over the majestic mountains.",
-            imageUrl: "https://via.placeholder.com/600x400?text=Sunset+Over+Mountains",
+            title: "",
+            description: "",
+            imageUrl: activityData,
         },
         {
             id: 2,
-            title: "City Lights at Night",
-            description: "The vibrant city lights shimmering at night.",
-            imageUrl: "https://via.placeholder.com/600x400?text=City+Lights",
+            title: "",
+            description: "",
+            imageUrl: activityData2,
         },
         {
             id: 3,
-            title: "Serene Lake View",
-            description: "A tranquil view of the lake surrounded by lush greenery.",
-            imageUrl: "https://via.placeholder.com/600x400?text=Lake+View",
+            title: "",
+            description: "",
+            imageUrl: activityData3,
         },
         {
             id: 4,
-            title: "Starry Night Sky",
-            description: "The stunning starry sky captured during a clear night.",
-            imageUrl: "https://via.placeholder.com/600x400?text=Starry+Night",
+            title: "",
+            description: "",
+            imageUrl: activityData4,
         },
         {
             id: 5,
-            title: "Snow-Capped Peaks",
-            description: "The breathtaking snow-capped peaks of the high mountains.",
-            imageUrl: "https://via.placeholder.com/600x400?text=Snow-Capped+Peaks",
+            title: "",
+            description: "",
+            imageUrl: activityData5,
         },
         {
             id: 6,
-            title: "Flower Field in Bloom",
-            description: "A vibrant field of flowers in full bloom.",
-            imageUrl: "https://via.placeholder.com/600x400?text=Flower+Field",
+            title: "",
+            description: "",
+            imageUrl: activityData6,
         },
     ];
 
