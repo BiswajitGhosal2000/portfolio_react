@@ -12,7 +12,7 @@ import Experience from './pages/Experience';
 import Certifications from './pages/Certifications';
 import Education from './pages/Education';
 import Activities from './pages/Activities';
-// import Blog from './pages/blogs/Blog';
+import Blog from './pages/blogs/Blog';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -80,6 +80,13 @@ const App = () => {
           </Layout>
         </section>
 
+        {/* Blog Section */}
+        <section id="blog" className="py-4">
+          <Layout>
+            <Blog />
+          </Layout>
+        </section>
+
         {/* Activities Section */}
         <section id="activities" className="py-4">
           <Layout>
@@ -94,12 +101,6 @@ const App = () => {
           </Layout>
         </section>
 
-        {/* Blog Section 
-         <section id="blog" className="py-4">
-          <Layout>
-            <Blog />
-          </Layout>
-        </section> */}
       </div>
     </div>
   );

@@ -1,6 +1,9 @@
 import React from 'react';
-import { Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow, BookOpenIcon, BookAIcon } from 'lucide-react';
-import profilephoto from '../assets/img/photo/profilephoto.png';
+import {
+    Menu, X, User, Mail, Linkedin, GitBranchIcon, Home, BriefcaseBusinessIcon, LucideWorkflow,
+    BookCopyIcon, BookOpenIcon, BookAIcon
+} from 'lucide-react';
+import profilePhoto from '../assets/img/photo/profilephoto.png';
 
 // Sidebar Navigation Data
 const sidebar_data = [
@@ -12,7 +15,7 @@ const sidebar_data = [
     { name: 'Education', icon: BookOpenIcon, link: '#education' },
     { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
     { name: 'Contact', icon: Mail, link: '#contact' },
-    // { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
+    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
 ];
 
 // Sidebar Footer Data
@@ -31,7 +34,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
-            {isOpen && <img src={profilephoto} alt="Profile" className="w-32 h-32 rounded-full mx-auto mt-4" />}
+            {isOpen && <img src={profilePhoto} alt="Profile" className="w-32 h-32 rounded-full mx-auto mt-4" />}
             {!isOpen && <p className="text-center mt-4">Biswajit Ghosal</p>}
             <hr className="my-1 border-gray-700" />
             {/* Sidebar Navigation */}
