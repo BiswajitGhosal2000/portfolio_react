@@ -97,7 +97,7 @@ function Projects() {
                                 <i className={`${project.icon} text-blue-400 mx-2`}></i>
                                 {project.title}
                             </h5>
-                            <hr className=" border-2" />
+                            <hr />
                         </div>
                         <div className="flex flex-wrap">
                             {/* Carousel */}
@@ -123,7 +123,7 @@ function Projects() {
                                     <span className="font-bold">Tools/Technology:</span>{" "}
                                     {project.tools}
                                 </p>
-                                <hr className="my-2 border-2" />
+                                <hr className="my-2 " />
                                 <div className="mt-4 flex space-x-4">
                                     {project.websiteLink && (
                                         <a

@@ -15,7 +15,7 @@ const sidebar_data = [
     { name: 'Education', icon: BookOpenIcon, link: '#education' },
     { name: 'Activities', icon: LucideWorkflow, link: '#activities' },
     { name: 'Contact', icon: Mail, link: '#contact' },
-    { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
+    // { name: 'Blog', icon: BookCopyIcon, link: '#blog' },
 ];
 
 // Sidebar Footer Data
